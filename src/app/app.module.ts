@@ -8,6 +8,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { InputPropertyComponent } from './input-property/input-property.component';
 import { CicloComponent } from './ciclo/ciclo.component';
 import { PaymentComponent } from './payment/payment.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PaymentComponent } from './payment/payment.component';
     DataBindingComponent,
     InputPropertyComponent,
     CicloComponent,
-    PaymentComponent
+    PaymentComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
