@@ -10,6 +10,7 @@ export class DataBindingComponent implements OnInit {
   valorAtual: string = '';
   valorSalvo = '';
   inputProduto: string;
+  nomeProduto: string = "Celular Xiaomi";
 
   onKeyUp(evento: KeyboardEvent){
     this.valorAtual = (<HTMLInputElement>evento.target).value;
