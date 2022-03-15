@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppComponent } from './app-component/app.component';
 import { CartComponent } from './cart/cart.component';
-import { DataBindingComponent } from './data-binding/data-binding.component';
-import { InputPropertyComponent } from './input-property/input-property.component';
-import { CicloComponent } from './ciclo/ciclo.component';
 import { PaymentComponent } from './payment/payment.component';
 import { CardComponent } from './card/card.component';
 
@@ -14,15 +12,14 @@ import { CardComponent } from './card/card.component';
   declarations: [
     AppComponent,
     CartComponent,
-    DataBindingComponent,
-    InputPropertyComponent,
-    CicloComponent,
     PaymentComponent,
     CardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
