@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: 'card/cadastrar', component: CardComponent },
+  { path: 'card/editar/:id', component: CardComponent },
 ];
 
 @NgModule({
